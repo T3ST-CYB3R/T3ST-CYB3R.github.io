@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cyber's Website</title>
+  </head>
+  <body style="background-color: black;">
+    <div style="text-align: center; color: white;">
+      <h1>Welcome to Cyber's Website</h1>
+    </div>
+    <div style="text-align: center;">
+      <a href="info.html" style="color: purple; text-decoration: none; margin-right: 10px;">Cyber's Infos</a>
+      <a href="#" onclick="showVideo()" style="color: purple; text-decoration: none;">Star Wars Movie</a>
+    </div>
+    <div id="video-modal" style="display: none;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Dgwyo6JNTDA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <script>
+      function showVideo() {
+        document.getElementById("video-modal").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
